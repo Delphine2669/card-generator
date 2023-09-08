@@ -1,0 +1,8 @@
+.carousel-container {
+  display: flex;
+}
+.strength-counter-buttons,
+.charisma-counter-buttons,
+.endurance-counter-buttons {
+  display: flex;
+}

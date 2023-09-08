@@ -1,11 +1,11 @@
 import { useState } from "react";
 function Counter() {
-  const [count, setCount] = useState("0");
+  const [count, setCount] = useState("01");
 
   return (
-    <div>
-      <div>{count}</div>
-      <div>
+    <div className="counter-container">
+      <div className="counter">{count}</div>
+      <div className="counter-buttons">
         <button type="button" onClick={() => setCount((count) => count - 1)}>
           -
         </button>
