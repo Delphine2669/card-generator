@@ -1,15 +1,21 @@
 import { useState } from "react";
 function Form() {
   const [pseudo, setPseudo] = useState("");
+  const handlePseudoChange = (event) => {
+    const newPseudo = event.target.value;
+    setPseudo(newPseudo);
+  };
   return (
     <>
-      <label className="pseudo-label">You are:</label>
       <input
         type="text"
         className="pseudo"
         value={pseudo}
-        onChange={setPseudo}
+        onChange={handlePseudoChange}
       />
+      <label className="pseudo-label">
+        <h2>You are {pseudo}</h2>
+      </label>
     </>
   );
 }
